@@ -1,0 +1,22 @@
+[package]
+name = "tetris"
+version = "0.1.0"
+edition = "2024"
+description = "Terminal Tetris with Vim controls, TOML preferences, and personal score history"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+clap = { version = "4.6", features = ["derive"] }
+crossterm = "0.29"
+directories = "6.0"
+rand = "0.8"
+ratatui = { version = "0.30", default-features = false, features = ["crossterm"] }
+rusqlite = { version = "0.38", features = ["bundled"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "1.1"
+uuid = { version = "1.28", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "3.27"

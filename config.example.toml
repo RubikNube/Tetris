@@ -1,0 +1,25 @@
+# Copy to ~/.config/tetris/config.toml, or use tetris --config PATH.
+# Omitted settings retain their defaults. Key names are case sensitive for letters.
+[controls]
+left = ["h", "Left"]
+right = ["l", "Right"]
+soft_drop = ["j", "Down"]
+rotate_cw = ["k", "Up"]
+rotate_ccw = ["z"]
+hard_drop = ["Space"]
+hold = ["c"]
+pause = ["p", "Esc"]
+help = ["?"]
+quit = ["q", "Ctrl+c"]
+
+[game]
+start_level = 1 # 1..20; speed continues increasing during play
+
+[display]
+ghost = true
+color = true
+
+[history]
+# Defaults to the platform user data directory (Linux: ~/.local/share/tetris).
+# Relative paths resolve beside the loaded config file.
+# path = "scores.sqlite3"
