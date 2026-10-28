@@ -99,7 +99,7 @@ fn menu(frame: &mut Frame, app: &App) {
     let area = frame.area();
     let mut lines = vec![
         Line::from("T E T R I S").style(Style::default().add_modifier(Modifier::BOLD)),
-        Line::from("Rust terminal edition"),
+        Line::from("terminal edition"),
         Line::from(""),
     ];
     for (i, label) in ["New game", "Score history", "Quit"].iter().enumerate() {
